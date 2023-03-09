@@ -12,5 +12,5 @@ app.use(express.json());
 //#####
 
 app.use(express.static("public"));
-
+app.use("/", routes);
 app.listen(PORT, () => console.log(`The server is running on ${PORT} 🚀`));
