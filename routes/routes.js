@@ -11,6 +11,11 @@ router.get("/notes", (req, res) => {
 	
 	
 });
+router.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname, "../public/index.html"))
+	
+	
+});
 
 router.get("/api/notes/", (req, res) => {
 	//send note json
